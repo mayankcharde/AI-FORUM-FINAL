@@ -1,0 +1,89 @@
+/* Remove blur and set a clear background */
+.bg-container {
+background: url('MainImage.jpg') no-repeat fixed;
+  background-size: cover;
+}
+
+/* Card styling for clarity and spacing */
+.content {
+  padding-bottom: 40px;
+}
+
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.card-img-top.event-img {
+  object-fit: cover;
+  height: 280px;
+  width: 100%;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #181c2f;
+}
+
+.card-text {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .card-img-top.event-img {
+    height: 180px;
+  }
+}
+
+/* Menu styles (ensure consistency with about.html) */
+/* Menu Button */
+/* ...existing code... */
+
+/* Menu styles (match about.html, right-bottom position) */
+.menu-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.menu-btn {
+ width: 40px;
+  height: 40px;
+  background-color: lightblue;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+.menu-options {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  min-width: 160px;
+  padding: 10px 0;
+}
+
+.menu-options a {
+  color: #181c2f;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.menu-options a:hover {
+  background: #f0f0f0;
+}
+
+/* Remove old menu styles */
+#menuButton, #menuDropdown {
+  display: none !important;
+}
+/* ...existing code... */

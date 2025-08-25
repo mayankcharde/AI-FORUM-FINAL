@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - AI VERSE</title>
+    <link rel="stylesheet" href="event.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body class="bg-container">
+    <nav class="nav-container">
+      <a href="homePage.html" class="home-btn">
+        <i class="fas fa-home"></i>
+        Home
+      </a>
+    </nav>
+    <div class="content">
+      <div class="contact-container">
+        <h1>Get in Touch</h1>
+        <p class="form-description">
+          Have a question or want to collaborate? We'd love to hear from you.
+        </p>
+        <form class="contact-form">
+          <div class="form-group">
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              required
+              autocomplete="name"
+            />
+            <label for="fullname">Full Name</label>
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+            />
+            <label for="email">Email Address</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" required rows="5"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
